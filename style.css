@@ -26,12 +26,12 @@
 
 
 .saluteImg {
-    width: 100%;
+    width: 90%;
 }
 
 .saluteText {
     color: #333;
-    font-size: 60vw;
+    font-size: 58vw;
     cursor: default;
 }
 
@@ -88,6 +88,10 @@
     gap: 100px;
     height: 100vh;
     overflow: hidden;
+}
+
+.project:nth-child(2n){
+    flex-direction: row-reverse;
 }
 
 .phone {
@@ -189,4 +193,57 @@
 }
 .laptopScreen::-webkit-scrollbar {
     display: none;
+}
+
+.githubContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.githubTitle{
+    font-size: 100px;
+    color: #333;   
+}
+
+.githubChart{
+    width: 820px;
+    text-align: center;
+}
+
+.dates{
+    padding: 10px;
+    color: #555;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: row;
+}
+
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 3s all ease;
+}
+
+.active:nth-child(4n){
+    background-color: #195b2c;
+}
+
+.boxContainer:hover .active:nth-child(2n+1){
+    background-color: #195b2c;
+}
+.boxContainer:hover .active:nth-child(2n){
+    background-color: #063f24;
 }
