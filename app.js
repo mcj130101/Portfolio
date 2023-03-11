@@ -42,6 +42,6 @@ window.addEventListener("scroll", () => {
   jobTitles[1].style.transform = `translateX(calc(-300vh + ${offsetY}px))`;
   projectTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`;
   phones[0].style.transform = `translateX(calc(500vh - ${offsetY}px))`;
-  laptop.style.transform = `translateX(calc(600vh - ${offsetY}px))`;
-  // phones[1].style.transform = `translateX(calc(750vh - ${offsetY}px))`;
+  laptop.style.transform = `translateX(calc(600vh - ${offsetY - 200}px))`;
+  phones[1].style.transform = `translateX(calc(-700vh + ${offsetY - 200}px))`;
 })
