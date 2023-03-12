@@ -1,3 +1,5 @@
+
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +8,7 @@
 
 .container {
     background-color: #111111;
+    overflow: hidden;
 }
 
 .salute {
@@ -75,11 +78,13 @@
     flex-direction: column;
     gap: 30vh;
     padding: 0px 100px;
+    /* height: 400vh; */
 }
 
 .projectsTitle {
     font-size: 10vw;
     color: #333;
+    height: 100vh;
 }
 
 .project {
@@ -130,7 +135,8 @@
 }
 
 
-.projectTitile {
+.projectTitle {
+
     font-size: 7vw;
     color: #555;
 }
@@ -246,4 +252,21 @@
 }
 .boxContainer:hover .active:nth-child(2n){
     background-color: #063f24;
+}
+
+@media screen and (max-width:1024px){
+    .project{
+        flex-direction: column;
+    }
+    .project:nth-child(2n){
+        flex-direction: column;
+    }
+
+    .phone, .laptop {
+        transform: none !important;
+    }
+
+    .githubChart{
+        display: none;
+    }
 }
